@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>这只是一个简单的排行榜</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/page-2.css">
+    <script src="js/fun-2.js"></script>
+    <script src="js/rank.js"></script>
+    <script src="js/vue.js"></script>
+    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+  <script type="text/javascript">
+     $youziku.load("body", "e8fbe1172b7d41dd88a00a8e1f621360", "DroidSans");
+     /*$youziku.load("#id1,.class1,h1", "e8fbe1172b7d41dd88a00a8e1f621360", "DroidSans");*/
+     /*．．．*/
+     $youziku.draw();
+  </script>
+  </head>
+  <body>
+    <canvas id="sakura" ></canvas>
+    <div class="book">  </div>
+    <div class="logo-2"><span class="sp-2"><a href="book.html" style="text-decoration:none;">Share</span></a></div>
+    <div class="emg-2 animated">
+      <div class="bubble-3">
+        <p>本排行榜来自于《这本轻小说真厉害！》排行榜统计</p>
+      </div>
+      <div class="pao"></div>
+    </div>
+    <div class="rank animated bounceInDown">
+      <div class="bigyear">
+        <span class="by">2005</span>
+      </div>
+      <table class="zebra">
+          <thead>
+          <tr>
+              <th>排名</th>
+              <th>书名</th>
+              <th>作者</th>
+              <th>插画师</th>
+              <th>所属文库</th>
+          </tr>
+          </thead>
+
+          <tr v-for="(item,index) in items[0]">
+              <td>{{ index+1 }}</td>
+              <td>{{ item.book }}</td>
+              <td>{{ item.auth }}</td>
+              <td>{{ item.painter }}</td>
+              <td>{{ item.ph }}</td>
+          </tr>
+      </table>
+      <div class="year">
+        <table class="zebra tab">
+            <thead>
+            <tr>
+                <th>日期</th>
+            </tr>
+            </thead>
+            <tr>
+                <td v-on:click="f2005">2005</td>
+            </tr>
+            <tr>
+                <td v-on:click="f2006">2006</td>
+            </tr>
+            <tr>
+                <td v-on:click="f2007">2007</td>
+            </tr>
+            <tr>
+                <td v-on:click="f2008">2008</td>
+            </tr>
+            <tr>
+                <td v-on:click="f2009">2009</td>
+            </tr>
+            <tr>
+                <td v-on:click="f2010">2010</td>
+            </tr>
+            <tr>
+                <td v-on:click="f2011">2011</td>
+            </tr>
+            <tr>
+                <td v-on:click="f2012">2012</td>
+            </tr>
+            <tr>
+                <td v-on:click="f2013">2013</td>
+            </tr>
+            <tr>
+                <td v-on:click="f2014">2014</td>
+            </tr>
+            <tr>
+                <td v-on:click="f2015">2015</td>
+            </tr>
+            <tr>
+                <td v-on:click="f2016">2016</td>
+            </tr>
+            <tr>
+                <td v-on:click="f2017">2017</td>
+            </tr>
+            <tr>
+                <td v-on:click="f2018">2018</td>
+            </tr>
+        </table>
+      </div>
+      <div class="in">
+        <p>O</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+
+    var rank = new Vue({
+    el: '.rank',
+    data: {
+      items : [0]
+    },
+    methods:{
+      f2005: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2005");
+        rank.$set(rank.items,0,rank_2005);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+      },
+      f2006: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2006");
+        rank.$set(rank.items,0,rank_2006);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+      },
+      f2007: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2007");
+        rank.$set(rank.items,0,rank_2007);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+    },
+      f2008: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2008");
+        rank.$set(rank.items,0,rank_2008);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+  },
+      f2009: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2009");
+        rank.$set(rank.items,0,rank_2009);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+},
+      f2010: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2010");
+        rank.$set(rank.items,0,rank_2010);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+},
+      f2011: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2011");
+        rank.$set(rank.items,0,rank_2011);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+},
+      f2012: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2012");
+        rank.$set(rank.items,0,rank_2012);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+},
+      f2013: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2013");
+        rank.$set(rank.items,0,rank_2013);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+},
+      f2014: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2014");
+        rank.$set(rank.items,0,rank_2014);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+},
+      f2015: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2015");
+        rank.$set(rank.items,0,rank_2015);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+},
+      f2016: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2016");
+        rank.$set(rank.items,0,rank_2016);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+},
+      f2017: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2017");
+        rank.$set(rank.items,0,rank_2017);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+},
+      f2018: function(){
+        $(".rank").removeClass('bounceInDown');
+        $(".by").text("2018");
+        rank.$set(rank.items,0,rank_2018);
+        $(".rank").addClass('fadeInDown');
+        setTimeout(function(){
+          $(".rank").removeClass('fadeInDown');
+       },500);
+}
+  }
+  });
+  rank.$set(rank.items,0,rank_2005);
+    </script>
+    <script src="js/main.js"></script>
+
+
+  </body>
+</html>

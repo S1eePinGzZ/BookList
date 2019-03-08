@@ -1,0 +1,147 @@
+body{
+  overflow: hidden;
+}
+
+canvas {
+  z-index:10;
+  pointer-events:none;
+  padding:0;
+  margin:0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.outer{
+  display: none;
+  height: 800px;
+  width: 1400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -700px;
+  margin-top: -400px;
+  background-color: #ffffff;
+  z-index: 5;
+  opacity: 0.9!important;
+  border-radius: 50px;
+}
+
+.rb{
+  background-image: url(../img/loge-3.png);
+  width: 15%;
+  height: 450px;
+  background-repeat: no-repeat;
+  z-index: -2;
+  background-size:100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.char{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 20%;
+}
+
+
+.char-3{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 30%;
+}
+.what{
+  height: 150px;
+  box-shadow: 4px 4px 2px black;
+  width: 150px;
+  border-radius: 50%;
+  background-size: 100% 100%;
+}
+
+.bac{
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  border-top: 100px solid #ebebeb;
+  border-left: 100px solid transparent;
+  position: absolute;
+  right: 0;
+  top : 0;
+}
+.more{
+  display: none;
+  height: 800px;
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  margin-left: -500px;
+  margin-top: -400px;
+  background-color: #969696;
+  z-index: 5;
+  opacity: 1;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 100px;
+  border-radius: 50px;
+}
+.intro{
+  padding-top: 30px;
+  width: 600px;
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  height: 400px;
+  background-color: #ffffff;
+}
+.char-more{
+  display: none;
+  height: 200px;
+  width: 300px;
+  background-color: red;
+  position: relative;
+  top: -220px;
+  left: -75px;
+  padding: 10px;
+  padding-top: 2px;
+
+  box-shadow: 3px 3px 2px black;
+  border-radius: 20px;
+  background-color: #e2e2e2;
+}
+.bookimg-1{
+  margin-left: 950px;
+  margin-top: 50px;
+  height: 450px;
+  width: 300px;
+  opacity: 1;
+  background-image: url(../img/book1-3.jpg);
+  box-shadow: 6px 6px 3px black;
+  background-size: 100% 100%;
+}
+
+.bookimg-2{
+  margin-left: 950px;
+  margin-top: 50px;
+  height: 450px;
+  box-shadow: 6px 6px 3px black;
+  width: 300px;
+  background-image: url(../img/book2-2.jpg);
+  background-size: 100% 100%;
+}
+
+.bookimg-3{
+  margin-left: 950px;
+  margin-top: 50px;
+  height: 450px;
+  box-shadow: 6px 6px 3px black;
+  width: 300px;
+  background-image: url(../img/book3-2.jpg);
+  background-size: 100% 100%;
+}

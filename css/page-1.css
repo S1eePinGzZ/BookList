@@ -1,0 +1,226 @@
+.item-1
+{
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/2.png);
+  border-radius: 50%;
+  background-size: 100% 100%;
+  box-shadow: 8px 8px 5px black;
+  cursor: pointer;
+}
+.item-2{
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/3.jpg);
+  border-radius: 50%;
+  background-size: 100% 100%;
+  box-shadow: 8px 8px 5px black;
+  cursor: pointer;
+}
+.item-3{
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/4.png);
+  border-radius: 50%;
+  background-size: 100% 100%;
+  box-shadow: 8px 8px 5px black;
+  cursor: pointer;
+}
+.item-4{
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/5.jpg);
+  border-radius:50%;
+  background-size: 100% 100%;
+  box-shadow: 8px 8px 5px black;
+  cursor: pointer;
+}
+.outer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outer-1{
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+.logo-1{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 200px solid 		#D3D3D3;
+    border-right: 200px solid transparent;
+    opacity: 0.7;
+}
+.logo-2{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 120px solid 	#808080;
+    border-right: 120px solid transparent;
+    opacity: 0.7;
+}
+.sp-1{
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  transform:rotate(-45deg);
+  position: relative;
+  top: -100px;
+  left: 55px;
+  font-family: head;
+  cursor: pointer;
+}
+.sp-2{
+  display: block;
+  font-family: head;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  transform:rotate(-45deg);
+  position: relative;
+  top: -55px;
+  left: 15px;
+  cursor: pointer;
+}
+.bubble-1{
+  z-index: -1;
+  opacity: 0;
+  box-shadow: 7px 7px 3px black;
+  position: relative;
+  left: -15px;
+  padding: 15PX;
+  margin: 1em  0em 3em;
+  width: 200px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  background: #075698;
+  border-radius:20px;
+  background:linear-gradient(to bottom right, #e2b0ff,#9f44d3);
+　　}
+.bubble-2{
+  z-index: -1;
+  opacity: 0;
+  position: relative;
+  box-shadow: 7px 7px 3px black;
+  padding: 15PX;
+  margin: 1em  0em 3em;
+  width: 200px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  background: #075698;
+  border-radius:50%;
+  background:linear-gradient(to bottom right, #43cbff,#9708CC);
+
+　　}
+.bubble-3{
+  z-index: -1;
+  opacity: 0;
+  box-shadow: 7px 7px 3px black;
+  position: relative;
+  top: 130px;
+  margin-top: -200px;
+  padding: 15PX;
+  margin: 1em  0em 3em;
+  width: 200px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  background: #075698;
+  border-radius:50%;
+  background:linear-gradient(to bottom right, #5efce8,#736efe);
+
+　　}
+.bubble-4{
+  z-index: -1;
+  opacity: 0;
+        box-shadow: 7px 7px 3px black;
+        position: relative;
+        top: 130px;
+        padding: 15PX;
+        margin: 1em  0em 3em;
+        width: 200px;
+        line-height: 1.2;
+        text-align: center;
+        color: #fff;
+        background: #075698;
+        border-radius:20px;
+        background:linear-gradient(to bottom right, #5efce8,#736efe);
+　　}
+.foot{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 30px;
+}
+@font-face
+    {
+        font-family: head;
+        src:url(../font/font3/Poiret_One/PoiretOne-Regular.ttf);
+    }
+    @media screen and (max-width:1300px){
+      .zzz{
+        display: none;
+      }
+    }
+    @media screen and (max-width:1050px){
+        .emg{
+          display: none;
+        }
+      }
+    @media screen and (max-height:800px){
+      .zzz{
+        display: none;
+      }
+    }
+    canvas {
+      z-index:10;
+      pointer-events:none;
+			padding:0;
+			margin:0;
+      position: absolute;
+      left: 0;
+      top: 0;
+		}
+    .emg
+    {
+      z-index: -2;
+      width: 200px;
+      height: 200px;
+      background-image: url(../img/emg.jpg);
+      position: absolute;
+      left: 70px;
+      top: 70px;
+      transform:rotate(135deg);
+      background-size: 100%;
+    }
+    .zzz{
+      z-index: -2;
+      height: 600px;
+      width: 600px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      background-image: url(../img/leftbot.jpg);
+      background-size: 100% 100%;
+    }
+body{
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../img/toer.jpg);
+  background-size: auto 100%;
+  background-position: bottom right;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  background-repeat: no-repeat;
+}

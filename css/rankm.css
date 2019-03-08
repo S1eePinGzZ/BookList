@@ -1,0 +1,45 @@
+.log{
+  text-align: center;
+  margin: 100px auto;
+  width: 600px;
+}
+.log span{
+  font-size:80px;
+  text-shadow: 5px 5px 3px #8f9a98;
+}
+body{
+  background-image: url(../img/rankm.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 30%;
+}
+
+.logo-2{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    text-align: center;
+    height: 0;
+    border-top: 120px solid 	#808080;
+    border-right: 120px solid transparent;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.outer{
+  height: 100vh;
+  width: 100vw;
+  background-color: 
+}
+.sp-2{
+  display: block;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  transform:rotate(-45deg);
+  position: relative;
+  top:-69px;
+  font-size: 30px;
+  left: 15px;
+}
